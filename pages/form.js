@@ -18,6 +18,9 @@ router.get('/form/new', (req, res) => {
 
     <label for="rollnum">Roll No:</label>
     <input type="BIGINT" id="rollnum" name="rollnum"><br><br>
+
+    <label for="image">Your ID Image:</label>
+    <input type="file" id="image" name="image"><br><br>
     
     <label for="course">Course:</label>
     <input type="text" id="course" name="course"><br><br>

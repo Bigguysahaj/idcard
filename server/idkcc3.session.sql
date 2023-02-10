@@ -19,7 +19,8 @@ VALUES (2104920100096, 'SAHAJ SINGH', 'B.Tech(CSE)', 1234567891, '2021-2025', 'D
 
 
 -- @block
-ALTER TABLE kccid.users MODIFY COLUMN phone BIGINT;
+ALTER TABLE Users ADD COLUMN image BLOB;
+
 
 -- @block
 SELECT * FROM users;
