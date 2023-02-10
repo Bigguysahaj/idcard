@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://fonts.googleapis.com/css2?family=Lato&display=swap' rel='stylesheet'>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  <title>Document</title>
+</head>
+
+<style>
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;   
+    color: #403c30;
+  }
+
+  .Name {
+  padding: 8px;
+  position: absolute;
+  left: 50%;
+  top: 69%;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+  .Course {
+    position: absolute;
+    left: 74px;
+    top: 498px;
+    font-size: 21px;
+  }
+  .Roll {
+    position: absolute;
+    left: 73px;
+    top: 530px;
+    font-size: 21px;
+  }
+
+  .Session {
+  position: absolute;
+  left: 74px;
+  top: 563px;
+  font-size: 21px;
+  }
+
+  .Phone {
+    position: absolute;
+    left: 76px;
+    top: 596px;
+    font-size: 21px;
+  }
+
+  .id_photo {
+  position: absolute;
+  left: 132px;
+  top: 264px;
+  size: 50px;
+  width: 34%;
+}
+
+.qr {
+  position: absolute;
+  left: 139px;
+  top: 166px;
+}
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .Father {
+  position: absolute;
+  left: 30px;
+  top: 311px;
+  font-size: 18px;
+}
+
+.address {
+  position: absolute;
+  left: 30px;
+  top: 346px;
+  font-size: 18px;
+}
+
+  .msinbody {
+    display: flex;
+  }
+
+  .front {
+    display: flex;
+    flex-direction: column;
+    {{!-- background-image: url({{}}); --}}
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+
+  .back {
+    display: flex;
+    flex-direction: column;
+    {{!-- background-image: url(2.png); --}}
+    background-size: cover;
+    
+    height: 100vh;
+    width: 30%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+</style>
+
+<body>
+    <!-- <td><%= results[0].name %></td>
+    <td><%= results[0].rollnum %></td>
+    <td><%= results[0].course %></td>
+    <td><%= results[0].session %></td>
+    <td><%= results[0].phone %></td>
+    <td><%= results[0].address %></td>
+    <td><%= results[0].fathername %></td> -->
+  <div class="msinbody">
+    <div class="front">
+      <img src='1.png' alt="" class="backimg" style="height: 100vh" />
+      <!-- <img class="qr" src="qr.png" alt="" width="28%" /> -->
+      {{#each results}}
+      <div class="info" style="color:#403c30; ">
+        <img class="id_photo" src='kccnirmit.png' alt="" width="42%" />
+        <p class="Name" style="text-align: center;"><b><span>{{name}}</span></b></p>
+        <h3 class="Roll">Roll No &nbsp;&nbsp;&nbsp;&nbsp;: <span  style="font-size: 18px;font-weight: lighter;">{{rollnum}}</span></h3>
+        <h3 class="Course">Course &nbsp;&nbsp;&nbsp; &nbsp;:<span  style="font-size: 18px; font-weight: lighter;">{{course}}</span></h3>
+        <h3 class="Session">Session&nbsp; &nbsp;&nbsp;&nbsp;: <span  style="font-size: 18px; font-weight: lighter;">{{session}}</span></h3>
+        <h3 class="Phone">Phone  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;: <span  style="font-size: 18px; font-weight: lighter;">{{phone}}</span ></h3>
+      </div>
+    </div>
+  </div>
+
+    </div>
+    <div class="msinbody">
+      <div class="front">
+      <img src='2.png' alt="" class="backimg" style="height: 100vh" />
+      <img src="500qr.png" alt ="" class="qr" style="height: 18vh" />
+      <div style="display:flex; flex-wrap: wrap;">
+      <h2 class="Father">Father's Name &nbsp; :&nbsp;&nbsp; <span style="font-size: 17px;font-weight: lighter;">{{fathername}}</span></h2>
+      <h2 class="address" style="flex-wrap: wrap; max-width: 80%; overflow: hidden;">
+        Address &nbsp;&nbsp;:&nbsp;&nbsp; <span style="font-size: 17px;font-weight: lighter; display:flex; padding-top: 1%; ">{{address}}</span></h2>
+            {{/each}}
+      </div>
+    </div>
+
+  </body>
+  </html>
+      
+

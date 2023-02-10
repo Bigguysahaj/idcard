@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;   
+    color: #403c30;
+  }
+
+  .Name {
+  padding: 8px;
+  position: absolute;
+  left: 50%;
+  top: 69%;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;;
+  font-weight: 600px;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+  .Course {
+    position: absolute;
+    left: 74px;
+    top: 498px;
+    font-size: 21px;
+  }
+  .Roll {
+    position: absolute;
+    left: 73px;
+    top: 530px;
+    font-size: 21px;
+  }
+
+  .Session {
+  position: absolute;
+  left: 74px;
+  top: 563px;
+  font-size: 21px;
+  }
+
+  .Phone {
+    position: absolute;
+    left: 76px;
+    top: 596px;
+    font-size: 21px;
+  }
+
+  .id_photo {
+  position: absolute;
+  left: 132px;
+  top: 264px;
+  size: 50px;
+  width: 34%;
+}
+
+.qr {
+  position: absolute;
+  left: 139px;
+  top: 166px;
+}
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .Father {
+  position: absolute;
+  left: 30px;
+  top: 311px;
+  font-size: 18px;
+}
+
+.address {
+  position: absolute;
+  left: 30px;
+  top: 346px;
+  font-size: 18px;
+}
+
+  .msinbody {
+    display: flex;
+  }
+
+  .front {
+    display: flex;
+    flex-direction: column;
+    background-image: url('1.png');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+
+
+  .back {
+    display: flex;
+    flex-direction: column;
+    background-image: url('2.png');
+    background-size: cover;
+    
+    height: 100vh;
+    width: 30%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
